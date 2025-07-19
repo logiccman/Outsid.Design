@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX/UI Design Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfbf8; /* Light gray background */
+            color: #554b33; /* Darker text color */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0e9e2;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b8ad94;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8b8764;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 lg:px-24 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <img src="Logo (2).png" alt="Company Logo" class="h-10 w-auto rounded-md object-contain" onerror="this.onerror=null;this.src='https://placehold.co/100x40/cbd5e1/475569?text=LOGO';">
+            </div>
+            <!-- Navigation Links (Hidden on mobile, shown on larger screens) -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300 ease-in-out">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300 ease-in-out">About</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300 ease-in-out">Portfolio</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300 ease-in-out">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2">
+            <a href="#home" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md">Home</a>
+            <a href="#about" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md">About</a>
+            <a href="#portfolio" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md">Portfolio</a>
+            <a href="#contact" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-md">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75 rounded-b-xl shadow-lg">
+            <div class="container mx-auto text-center px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
+                    Crafting Intuitive & Engaging Experiences
+                </h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-up delay-200">
+                    I'm a UX/UI Designer passionate about creating user-centered solutions that look great and work seamlessly.
+                </p>
+                <a href="#portfolio" class="inline-block bg-white text-indigo-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out animate-fade-in-up delay-400">
+                    View My Work
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-16 md:py-24 bg-white rounded-xl shadow-md mx-6 md:mx-12 lg:mx-24 mt-8">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">About Me</h2>
+                <div class="max-w-3xl mx-auto text-gray-600 leading-relaxed text-lg">
+                    <p class="mb-4">
+                        Hello! I'm a dedicated UX/UI Designer with a strong focus on user research, wireframing, prototyping, and visual design. My goal is to bridge the gap between user needs and business objectives, delivering delightful and effective digital products.
+                    </p>
+                    <p class="mb-4">
+                        With a keen eye for detail and a passion for problem-solving, I thrive on transforming complex ideas into intuitive and aesthetically pleasing interfaces. I believe in a collaborative approach, working closely with development teams and stakeholders to ensure the best possible outcome.
+                    </p>
+                    <p>
+                        My expertise includes user flows, information architecture, usability testing, and creating high-fidelity mockups. I'm always eager to learn new technologies and design methodologies to stay at the forefront of the industry.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-16 md:py-24 bg-gray-50 rounded-xl shadow-md mx-6 md:mx-12 lg:mx-24 mt-8">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">My Work</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out group">
+                        <img src="Instagram post - 6.png" alt="Project Image 1" class="w-full h-60 object-cover rounded-t-xl group-hover:opacity-90 transition duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e0f2f7/0284c7?text=Project+1';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">E-commerce Mobile App Redesign</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                A complete overhaul of a popular e-commerce mobile application, focusing on improving user flow, checkout experience, and visual aesthetics. Implemented new navigation patterns and personalized recommendations.
+                            </p>
+                            <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium text-sm transition duration-300">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out group">
+                        <img src="Instagram post - 7.png" alt="Project Image 2" class="w-full h-60 object-cover rounded-t-xl group-hover:opacity-90 transition duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e0f2f7/0284c7?text=Project+2';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Dashboard UI for Analytics Platform</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Designed an intuitive and visually rich dashboard for a data analytics platform, enabling users to easily visualize complex data sets and gain actionable insights. Focused on clarity and customizability.
+                            </p>
+                            <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium text-sm transition duration-300">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out group">
+                        <img src="Instagram post - 8.png" alt="Project Image 3" class="w-full h-60 object-cover rounded-t-xl group-hover:opacity-90 transition duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e0f2f7/0284c7?text=Project+3';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Interactive Landing Page for SaaS</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Created a highly engaging and conversion-optimized landing page for a new SaaS product. Incorporated interactive elements and clear calls-to-action to guide users through the product's benefits.
+                            </p>
+                            <a href="#" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium text-sm transition duration-300">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-white rounded-xl shadow-md mx-6 md:mx-12 lg:mx-24 mt-8 mb-8">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Get In Touch</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mb-10 text-lg">
+                    Have a project in mind or just want to say hello? Feel free to reach out!
+                </p>
+                <div class="max-w-lg mx-auto">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 shadow-sm transition duration-300" required>
+                        </div>
+                        <div>
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 shadow-sm transition duration-300" required>
+                        </div>
+                        <div>
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Your Message" class="w-full px-5 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 shadow-sm transition duration-300" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transform hover:scale-105 transition duration-300 ease-in-out">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12 lg:px-24 rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2025 [Your Name]. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <!-- Social Media Links (placeholders) -->
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">LinkedIn</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Dribbble</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Behance</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                if (mobileMenu.classList.contains('block')) {
+                    mobileMenu.classList.remove('block');
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
+        });
+
+        // Simple form submission handler (for demonstration)
+        document.querySelector('#contact form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real application, you would send this data to a server
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset(); // Clear the form
+        });
+    </script>
+</body>
+</html>
